@@ -1,4 +1,4 @@
-module model
+module github.com/ajandera/sp_model
 
 go 1.19
 
