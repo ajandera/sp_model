@@ -1,5 +1,5 @@
 // Package model for database model
-package model
+package sp_model
 
 import (
 	"regexp"
