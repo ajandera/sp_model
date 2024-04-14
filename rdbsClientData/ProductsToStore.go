@@ -3,7 +3,7 @@ package rdbsClientData
 import (
 	"time"
 
-	"model/rdbsClientInfo"
+	"github.com/ajandera/sp_model/rdbsClientInfo"
 
 	"github.com/google/uuid"
 	"gorm.io/gorm"

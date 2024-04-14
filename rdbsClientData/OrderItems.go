@@ -1,7 +1,7 @@
 package rdbsClientData
 
 import (
-	"model/rdbsClientInfo"
+	"github.com/ajandera/sp_model/rdbsClientInfo"
 
 	"github.com/google/uuid"
 	"gorm.io/gorm"

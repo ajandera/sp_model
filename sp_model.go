@@ -5,9 +5,9 @@ import (
 	"regexp"
 	"time"
 
-	"model/noSqlClientPredictedData"
-	"model/rdbsClientData"
-	"model/rdbsClientInfo"
+	"github.com/ajandera/sp_model/noSqlClientPredictedData"
+	"github.com/ajandera/sp_model/rdbsClientData"
+	"github.com/ajandera/sp_model/rdbsClientInfo"
 
 	"github.com/influxdata/influxdb-client-go/v2/api"
 	"gorm.io/gorm"
