@@ -124,8 +124,6 @@ github.com/stretchr/testify v1.7.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/
 github.com/stretchr/testify v1.8.0/go.mod h1:yNjHg4UonilssWZ8iaSj1OCr/vHnekPRkoO+kdMU+MU=
 github.com/stretchr/testify v1.8.4 h1:CcVxjf3Q8PM0mHUKJCdn+eZZtm5yQwehR5yeSVQQcUk=
 github.com/zenazn/goji v0.9.0/go.mod h1:7S9M489iMyHBNxwZnk9/EHS098H4/F6TATF2mIxtB1Q=
-gitlab.eaineu.com/storepredictor/model/rdbsClientInfo v0.0.0-20240407201251-b3cfabe7fea8 h1:Jgll9nZzU94FAtoUm7rcvqQjMp3qL7Qbcm8R9pqhyIQ=
-gitlab.eaineu.com/storepredictor/model/rdbsClientInfo v0.0.0-20240407201251-b3cfabe7fea8/go.mod h1:lHFUDS+iVN8FLxCZqARFHQNVIHgY0eri6eL35SxFZgY=
 go.uber.org/atomic v1.3.2/go.mod h1:gD2HeocX3+yG+ygLZcrzQJaqmWj9AIm7n08wl/qW/PE=
 go.uber.org/atomic v1.4.0/go.mod h1:gD2HeocX3+yG+ygLZcrzQJaqmWj9AIm7n08wl/qW/PE=
 go.uber.org/atomic v1.5.0/go.mod h1:sABNBOSYdrvTF6hTgEIbc7YasKWGhgEQZyfxyTvoXHQ=
