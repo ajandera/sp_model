@@ -17,7 +17,7 @@ type ProductsToStore struct {
 	DateToNeed  time.Time
 	DateToOrder time.Time
 	StoreId     string
-	Store       rdbsClientInfo.Stores `gorm:"foreignKey:Order"`
+	Store       rdbsClientInfo.Stores `gorm:"-"`
 }
 
 func (product *ProductsToStore) BeforeCreate(db *gorm.DB) error {

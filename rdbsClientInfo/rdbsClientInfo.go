@@ -28,7 +28,7 @@ func NewConnect(dsn string) ClientData {
 		panic(errExt)
 	}
 	// Migrate the schema
-	db.AutoMigrate(
+	if err := db.AutoMigrate(
 		&OpenData{},
 		&StoreWeights{},
 		&Stores{},
@@ -36,7 +36,9 @@ func NewConnect(dsn string) ClientData {
 		&Accounts{},
 		&Suppliers{},
 		&Invoices{},
-		&Orders{})
+		&Orders{}); err != nil {
+		panic(err)
+	}
 	return ClientData{db}
 }
 

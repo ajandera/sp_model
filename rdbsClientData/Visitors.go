@@ -16,7 +16,7 @@ type Visitors struct {
 	ProductCode string
 	Header      string
 	Tag         string
-	Store       rdbsClientInfo.Stores `gorm:"foreignKey:Order"`
+	Store       rdbsClientInfo.Stores `gorm:"-"`
 }
 
 func (visitor *Visitors) BeforeCreate(db *gorm.DB) error {

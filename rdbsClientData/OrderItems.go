@@ -15,7 +15,7 @@ type OrderItems struct {
 	ProductCode string
 	Order       string
 	ProductName string
-	OrderEntity rdbsClientInfo.Stores `gorm:"foreignKey:Order"`
+	OrderEntity rdbsClientInfo.Stores `gorm:"-"`
 }
 
 func (orderItem *OrderItems) BeforeCreate(db *gorm.DB) error {

@@ -96,12 +96,14 @@ func NewConnect(dsn string) ClientData {
 	}
 
 	// Migrate the schema
-	db.AutoMigrate(
+	if err := db.AutoMigrate(
 		&OrderItems{},
 		&Orders{},
 		&Visitors{},
 		&Products{},
-		&ProductsToStore{})
+		&ProductsToStore{}); err != nil {
+		panic(err)
+	}
 
 	// create visitors view for prediction performance
 	errView := db.Exec("CREATE or REPLACE VIEW visitorsView AS SELECT count(*) AS visitors, store_id, date_trunc('day', created_at)::date AS day, tag FROM visitors WHERE header NOT LIKE '%Googlebot%' GROUP BY store_id, day, tag ORDER BY day").Error
